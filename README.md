@@ -95,6 +95,27 @@ php artisan serve
 
 Ora puoi accedere alla tua applicazione Laravel all'indirizzo `http://localhost:8000`.
 
+---
+
+In caso di progetto gia esistente entrare nella cartela di tale progetto da terminale,
+a seguire
+
+```bash
+composer install 
+```
+```bash
+cp .env.example .env 
+```
+```bash
+php artisan key:generate
+```
+modificare credenziali in file .env inserendo nome utente e password di Db
+
+```bash
+php artisan migrate 
+```
+
+
 ## Conclusione
 
 Hai installato con successo Laravel e tutti gli strumenti necessari per lo sviluppo su Linux. Buon coding!
