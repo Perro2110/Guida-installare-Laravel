@@ -10,12 +10,38 @@ Prima di iniziare, assicurati di avere i seguenti strumenti installati sul tuo s
 - Composer
 - Node.js e npm
 
-## Passo 1: Installare PHP
-
-```bash
-sudo apt update
-sudo apt install php php-cli php-fpm php-json php-common php-mysql php-zip php-gd php-mbstring php-curl php-xml php-bcmath
+## Passo 0/1: Installare i prerequisiti
+### Apache2
 ```
+sudo apt install apache2
+```
+### MySQL
+```
+sudo apt install mysql-server
+```
+
+### Php
+```
+sudo apt install php-pear php-fpm php-dev php-zip php-curl php-xmlrpc php-gd php-mysql php-mbstring php-xml libapache2-mod-php
+```
+
+### Restart Server 
+per aggiornare la config:
+```
+sudo service apache2 restart
+```
+### Check Apache
+
+Aprendo il web browser e accedendo al seguente url: http://localhost/. 
+Dovreste visualizzare un messaggio in cui dice che funziona.
+
+### Check Php
+
+Eseguendo il seguente comando viene svolto il controllo di funzionamento :
+```
+php -r 'echo "\n\n Your PHP installation is working fine. \n\n";'
+```
+
 
 Verifica l'installazione:
 
