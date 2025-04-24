@@ -6,7 +6,7 @@ Questa guida ti mostrerà come installare tutto il necessario per sviluppare con
 
 Prima di iniziare, assicurati di avere i seguenti strumenti installati sul tuo sistema:
 
-- PHP (versione 7.4 o superiore)
+- PHP (versione 8.2 o superiore)
 - Composer
 - Node.js e npm
 
