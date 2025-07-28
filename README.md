@@ -84,10 +84,24 @@ Ora che abbiamo tutti i prerequisiti, possiamo installare Laravel:
 composer global require laravel/installer
 ```
 
-Aggiungi il percorso di Composer al tuo PATH. Aggiungi questa linea al tuo file `.bashrc` o `.zshrc`:
+Aggiungi il percorso di Composer al tuo PATH. 
+
+Controlla attraverso il seguente comando dove sono stati inseriti gli eseguibili di Composer. 
 
 ```bash
-export PATH="$PATH:$HOME/.composer/vendor/bin"
+composer global config bin-dir --absolute
+```
+
+Ad esempio (Utilizzando Ubuntu 24.04) la mia è:
+
+```
+/home/fabrizio/.config/composer/vendor/bin
+```
+
+Aggiungi questa linea al tuo file `.bashrc` o `.zshrc` in base alla destinazione che ti è stata mostrata in precedenza:
+
+```bash
+export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 ```
 
 Ricarica il file di configurazione della shell:
